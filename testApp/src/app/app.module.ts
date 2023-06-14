@@ -7,11 +7,17 @@ import { NewComponentTestComponent } from './new-component-test/new-component-te
 import { FormsModule } from '@angular/forms';
 
 import { PersonsService } from './persons.service';
+import { SecondComponentComponent } from './second-component/second-component.component';
+import { ThirdComponentComponent } from './third-component/third-component.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewComponentTestComponent
+    NewComponentTestComponent,
+    SecondComponentComponent,
+    ThirdComponentComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
