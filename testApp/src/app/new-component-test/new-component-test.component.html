@@ -4,7 +4,7 @@
     <br><br>
     <button (click)="customSubmit($event)">Toggle name changing</button>
     <br><br>
-    <div *ngFor="let person of persons">
+    <div *ngFor="let person of persons" [ngClass]="{'default_user': person.name == 'Anonymous'}">
         {{person.name}} has {{person.age}} years old
     </div>
 </div>
