@@ -11,6 +11,10 @@ export class NewComponentTestComponent implements OnInit, OnDestroy {
   printing = false;
   // persons = [{ name: "", age: "" }];
   persons = [{ name: '', age: '' }];
+
+  date = new Date();
+  money = 2.23
+
   customSubmit = (event: Event) => {
     console.log(`Poszło!`);
     console.log(event)

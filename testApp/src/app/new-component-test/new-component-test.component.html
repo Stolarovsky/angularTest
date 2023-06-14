@@ -1,5 +1,5 @@
 <div class="custom_component">
-    <h1>Siemanko {{name}}</h1>
+    <h1>Siemanko {{name | uppercase}}</h1>
     <input *ngIf="printing" [(ngModel)]="name" type="text" />
     <br><br>
     <button (click)="customSubmit($event)">Toggle name changing</button>
@@ -7,4 +7,8 @@
     <div *ngFor="let person of persons" [ngClass]="{'default_user': person.name == 'Anonymous'}">
         {{person.name}} has {{person.age}} years old
     </div>
+    <br><br>
+    <h2>{{date | date:"yyyy-MM-dd"}}</h2>
+    <h2>{{date | date:"short"}}</h2>
+    <h2>{{money | currency: 'EUR'}}</h2>
 </div>
