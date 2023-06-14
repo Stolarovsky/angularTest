@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class NewComponentTestComponent {
   name = 'Anonymous';
-  customSubmit = function (event: Event) {
+  printing = false;
+  persons = [{ name: 'Anonymous', age: '99' }, { name: 'Person_1', age: '28' }, { name: 'Person_2', age: '35' }];
+  customSubmit = (event: Event) => {
     console.log(`Poszło!`);
     console.log(event)
+    this.printing = !this.printing
   };
 }
