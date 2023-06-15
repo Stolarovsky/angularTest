@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-third-component',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./third-component.component.css']
 })
 export class ThirdComponentComponent {
+
+  myForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl('')
+  })
+
+  submitForm() {
+    console.log(this.myForm.value)
+  }
 
 }

@@ -1,11 +1,12 @@
-<div class="custom_component">
+<div class="main-container">
+
     <h1>Siemanko {{name | uppercase}}</h1>
     <input *ngIf="printing" [(ngModel)]="name" type="text" />
     <br><br>
     <button (click)="customSubmit($event)">Toggle name changing</button>
     <br><br>
-    <div *ngFor="let person of persons" [ngClass]="{'default_user': person.name == 'Anonymous'}">
+    <p *ngFor="let person of persons" [ngClass]="{'default_user': person.name == 'Anonymous'}">
         {{person.name}} has {{person.age}} years old
-    </div>
+    </p>
 
 </div>
