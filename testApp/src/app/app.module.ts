@@ -10,6 +10,7 @@ import { PersonsService } from './persons.service';
 import { SecondComponentComponent } from './second-component/second-component.component';
 import { ThirdComponentComponent } from './third-component/third-component.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     NewComponentTestComponent,
     SecondComponentComponent,
     ThirdComponentComponent,
-    NavigationComponent
+    NavigationComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
