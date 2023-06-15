@@ -4,7 +4,7 @@ import { SecondComponentComponent } from './second-component/second-component.co
 import { ThirdComponentComponent } from './third-component/third-component.component';
 
 const routes: Routes = [
-  { path: 'secondComponent', component: SecondComponentComponent },
+  { path: 'secondComponent/:money', component: SecondComponentComponent },
   { path: 'thirdComponent', component: ThirdComponentComponent }
 ];
 
