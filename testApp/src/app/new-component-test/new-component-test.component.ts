@@ -23,6 +23,10 @@ export class NewComponentTestComponent implements OnInit, OnDestroy {
   ngOnInit() {
     console.log('Component init!')
     this.persons = this.personsService.allPersons();
+
+    this.personsService.myObservable$.subscribe(() => {
+      this.persons.push({ name: 'addedObservable', age: '40' })
+    })
   };
 
   ngOnDestroy() {
