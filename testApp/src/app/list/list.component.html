@@ -1,1 +1,7 @@
-<p>list works!</p>
+<h3>
+    Click the film to see the details!
+</h3>
+
+<div *ngFor="let film of films;" class="film" routerLink="film/{{film.id}}">
+    <img src="assets/{{film.title | lowercase}}.jpg" width="100">
+</div>

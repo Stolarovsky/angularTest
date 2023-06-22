@@ -1,1 +1,4 @@
-<p>details works!</p>
+<img src="assets/{{film.title | lowercase}}.jpg" width="100">
+<h1> {{film.title}} {{film.year}} </h1>
+<p> {{film.description}} </p>
+<button (click)="back()">Back</button>
